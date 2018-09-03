@@ -8,7 +8,7 @@
 //  Global variables
 //
 
-
+// https://warwickshiredirect.achieveservice.com/api/crossreference/reference/list/apikey=a78d3c9afdbc9e55ec70894424416bd2ef9373a1263f52115344bd7ea794bb314628f33cf2a983845abc2bd40c26c03d94e8b51932ee2c7cb9d26dc0748f5bd0
 var baseXrefURL = "https://warwickshiredirect.achieveservice.com/api/crossreference/reference/";
 var xrefAPIkey = "/apikey=a78d3c9afdbc9e55ec70894424416bd2ef9373a1263f52115344bd7ea794bb314628f33cf2a983845abc2bd40c26c03d94e8b51932ee2c7cb9d26dc0748f5bd0";
 var xrefquery = "list";
@@ -24,7 +24,7 @@ function listXrefsForUCRN(ucrn) {
 
 	xrefquery = "list";
 
-	var url = baseXrefURL + xrefquery + xrefAPIkey;
+	var url = new String(baseXrefURL + xrefquery + xrefAPIkey).toString();
 
 	console.log(url);
 
@@ -32,7 +32,7 @@ function listXrefsForUCRN(ucrn) {
 		type: "POST",
 		url: url,
 		dataType: "json",
-		headers: {"Authorization": "Basic " + btoa("TECHADMIN6:Banzai29")},
+		headers: {"Authorization": "Basic " + btoa(myusername+":"+mypassword)},
 		success: function(data) {
 			var jsonstring = JSON.stringify(data);
 
