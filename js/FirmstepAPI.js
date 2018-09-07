@@ -12,7 +12,7 @@
 var baseXrefURL = "https://warwickshiredirect.achieveservice.com/api/crossreference/reference/";
 var xrefAPIkey = "/apikey=a78d3c9afdbc9e55ec70894424416bd2ef9373a1263f52115344bd7ea794bb314628f33cf2a983845abc2bd40c26c03d94e8b51932ee2c7cb9d26dc0748f5bd0";
 var xrefquery = "list";
-var myusername = "johncable@warbwickshire.gov.uk";
+var myusername = "johncable@warwickshire.gov.uk";
 var mypassword = "Hampton2019";
 
 // Utility functions
@@ -20,7 +20,7 @@ var mypassword = "Hampton2019";
 // Register Handlebars helpers
 
 // ============================================================================
-function listXrefsForUCRN(ucrn) {
+function listXrefsForUCRN(myucrn) {
 
 	xrefquery = "list";
 
@@ -31,8 +31,15 @@ function listXrefsForUCRN(ucrn) {
 	$.ajax({
 		type: "POST",
 		url: url,
+		data: { ucrn: myucrn},
+		contentType: "application/json",
+		xhrFields: {
+			withCredentials: true
+		},
 		dataType: "json",
-		headers: {"Authorization": "Basic " + btoa(myusername+":"+mypassword)},
+		headers: {
+			"Authorization": "Basic " + btoa(myusername+":"+mypassword)
+		},
 		success: function(data) {
 			var jsonstring = JSON.stringify(data);
 
