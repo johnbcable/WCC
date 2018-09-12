@@ -54,6 +54,26 @@ function listXrefsForUCRN(myucrn) {
 
 }
 
+/*
+
+posts = $.ajax({
+    type: 'GET',
+    url: ajaxurl,
+    async: false,
+    dataType: 'json',
+    data: { action : 'getHotelsList' },
+    done: function(results) {
+        // uhm, maybe I don't even need this?
+        JSON.parse(results);
+        return results;
+    },
+    fail: function( jqXHR, textStatus, errorThrown ) {
+        console.log( 'Could not get posts, server response: ' + textStatus + ': ' + errorThrown );
+    }
+}).responseJSON; // <-- this instead of .responseText
+
+
+*/
 
 
 
