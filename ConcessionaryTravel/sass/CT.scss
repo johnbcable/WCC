@@ -1,0 +1,340 @@
+// Highlight Colors
+//
+// Weight: 0
+//
+// Colour palette we are using.
+//
+// $highlight-blue - #1460aa; primary blue
+// $highlight-purple - #674172; secondary purple
+// $highlight-red - #d50000; danger red
+//
+// Styleguide Base.colors
+
+//
+// Components 
+//
+// Weight: 1
+//
+// These are styles applied to Firmstep components of our CT application. 
+// They may be made up of smaller groups of styles. The styling of these components 
+// is specified in this (CT.css) file which is loaded into CT Firmstep processes using 
+// the static link:  http://static.warwickshire.gov.uk//firmstep/processes/concessionary_travel/css/CT.css 
+// as used in the WCC CT Initialise subform.
+//
+// Styleguide Components
+
+// Developer Notes
+//
+// Weight: 2
+//
+// Defines the way in which notes for Firmstep developers appear.
+// These are normally implemented as HTML tokens with display condition 1=2 
+// located physically adjacent in the Firmstep source to the Firmstep controls it relates to.
+// so that they appear in the developer window but not at run-time 
+// 
+// Markup:
+// <div class="developerNotes">Developer notes. These may optionally 
+// also contain .noteTitle elements
+// <p class="noteTitle">A Note Title</p></div>
+//
+// Styleguide Components.developerNotes
+.developerNotes {
+	position: relative;
+	border: 2px solid blue; 
+	padding: 20px;
+	border-radius: 10px; 
+	background-color: #D2E9F5;
+	color: blue;
+}
+
+// Note Title 
+//
+// Used to emphasise what this particular developer note is all about.
+//
+// Markup:
+// <p class="noteTitle">A Note Title</p>
+//
+// Styleguide Components.developerNotes.noteTitle
+
+.noteTitle {
+	text-decoration: underline;
+	color: blue;
+	font-weight: bold;
+	font-size: 120%;
+	margin-bottom: 2em;
+	text-decoration: underline;
+}
+
+// Service Outages
+//
+// Standard message area to contain messages of scheduled service disruption. 
+// This is included in Firmstep subform CT Planned Service Interruption.
+// Visibility of this subform is controlled using root-level token {servicemessage}
+//
+// Markup:
+// <div class="serviceDisruptionContainer">
+// <h3 class="serviceDisruptionTitle">Planned Services Interruption</h3>
+// <h5 class="serviceDisruptionSubTitle">Monday 14<sup>th</sup> January, 2019</h5>
+// <p class="serviceDisruptionPeriod">
+// 	From mid-day (12:00am) until 1:30pm
+// </p>
+// <p>
+//	The <strong>Firmstep Concessionary Travel</strong> processes will be unavailable for use during the above times due to system upgrades. Please ensure you complete any work in Firmstep prior to the start time – otherwise your work may not be saved correctly.
+// </p>
+// <p>
+//	We will circulate everyone when the works have been completed and the processes become available again for you to use.
+// </p>    
+// </div>
+//
+// Styleguide Components.outages
+
+.serviceDisruptionContainer {
+	border:2px solid black; 
+	padding:20px;
+	border-radius: 10px;
+}
+// Title
+//
+// Title of the service disruption message (optional)
+//
+// Weight: 1
+//
+// Markup:
+// <h3 class="serviceDisruptionTitle">Planned Services Interruption</h3>
+//
+// Styleguide Components.outages.title
+
+.serviceDisruptionTitle {
+	font-weight: bold;
+	color: blue;
+	font-size: 120%;
+	margin-bottom: 2em;
+}
+
+// Sub title
+//
+// Subtitle of the service disruption message (optional)
+//
+// Weight: 2
+//
+// Markup:
+// <h5 class="serviceDisruptionSubTitle">Monday 14<sup>th</sup> January, 2019</h5>
+//
+// Styleguide Components.outages.subtitle
+
+.serviceDisruptionSubTitle {
+	font-weight: bold;
+	color: black;
+	font-size: 110%;
+	margin-bottom: 2em;
+}
+
+// Disruption Period
+//
+// Time period for the service disruption (optional). May contain addditional inline CSS for emphasis
+//
+// Weight: 3
+//
+// Markup:
+// <h5 class="serviceDisruptionPeriod">From mid-day (12:00am) until 1:30pm</h5>
+//
+// Styleguide Components.outages.timeperiod
+
+.serviceDisruptionPeriod {
+	font-weight: bold;
+	color: red;
+	font-size: 100%;
+	margin-bottom: 2em;
+	padding-bottom: 2em;
+	border-bottom: 1px solid black;
+}
+
+// Buttons
+//
+// Markup: 
+// <a class="ctbutton {{modifier_class}}">Link Button</a>
+// <button class="ctbutton {{modifier_class}}">Button Element</button>
+// <input class="ctbutton {{modifier_class}}" type="button" value="Input Button" />
+//
+// :hover - When user hovers over button.
+// :focus - When button is focused.
+// :active - When button has been clicked
+// .button--small - A small button.
+// .button--large - A large button. 
+//
+// Styleguide Components.button 
+.ctbutton {
+  padding: 1em 2em;
+  margin: .5em;
+  display: inline-block;
+  font-size: .9em;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400; 
+  text-transform: uppercase;
+  color: white!important;
+  background-color: #006d3c;
+  border: 2px solid #00532e;
+  border-radius: 6px;
+  cursor: pointer;
+  text-align: center;
+  text-shadow: 0 -1px 0 rgba(0,0,0,0.4);
+  webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+  moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+  ms-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+  webkit-transition-duration: 0.5s;
+  moz-transition-duration: 0.5s;
+  ms-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  webkit-user-select:none;
+  moz-user-select:none;
+  ms-user-select:none;
+  user-select:none;
+  transition: all 0.5s }
+
+.ctbutton span {
+  cursor: pointer;
+  display: inline-block; 
+  position: relative;
+  transition: 0.5s;
+}
+
+.ctbutton span:after {
+  content: '\00bb'; 
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.ctbutton:hover {
+  color: yellow!important;
+  background-color: #006d3c; }
+
+.ctbutton:hover span {
+  padding-right: 25px;
+}
+
+.ctbutton:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.ctbutton:focus {
+  color: yellow!important;
+  border-color: currentColor; }
+
+.ctbutton:active {
+  background-color:#000;
+  color:#fff!important;
+}
+.ctbutton--small { 
+  font-size: .5em; }
+
+.ctbutton--large {
+  font-size: 1.5em; }
+
+// Debug Panel
+//
+// HTML for displaying debug information in Firmstep processes. Control display using 
+// display conditions
+// 
+// Weight: 2
+//
+// Markup: 
+// <div class="debugPanel">
+//     <p class="debugCaption">Caption for the debug panel
+// /div>
+//
+// Styleguide Components.debugpanel 
+.debugPanel {
+	border: 1px solid black;
+}
+.debugPanel caption {
+	font-weight: bold;
+}
+
+// Messages
+//
+// HTML for displaying messages to the operator using the Firmstep process.
+// 
+// Weight: 2
+//
+// Markup: 
+// <div class="messagePanel {{modifier_class}}">
+//     <p>This is the text of my message</p>
+//     <h3>I can include headings</h3>
+//     <p>And multiple paragraphs</p>
+// </div>
+//
+// .cterror - A warning message.
+// .ctwarning - A warning message.
+// .ctinfo - An information message.
+// .ctsuccess - A success message.
+// .ctadvice - An advice message
+// 
+// Styleguide Components.messages 
+.messagePanel {
+	margin: 1rem;
+	padding: 1rem;
+}
+.ctadvice {
+	text-align: center;
+	color:brown;
+	background: #FBF6DD; 	
+}
+.cterror {
+	border-left: 10px solid red;
+	color:red;
+	background: #EBCECE; 
+}
+.ctwarning {
+	border-left: 10px solid brown;
+	color:brown;
+	background: #FBF6DD; 
+}
+.ctinfo{
+	border-left: 10px solid blue;
+	color:blue;
+	background-color: #D2E9F5;
+}
+.ctsuccess {
+	border-left: 10px solid green;
+	color:green; 
+	background: #D2EAC8; 
+}
+
+// Cue Cards
+//
+// Styles for displaying messages to the operator that they need to read out to
+// the customer.
+// 
+// Weight: 2 
+//
+// Markup:  
+// <div class="cue-card">
+//     <p>Please read the following text out to the customer:</p>
+//     <p class="prompt">When we take payment for your Concessionary Travel pass you will not be able to cancel this</p>
+// </div>
+//
+// 
+// Styleguide Components.messages.cuecards 
+.cue-card {
+	margin: 1rem;
+	padding: 1rem;
+	border-left: 3px solid black;
+	border-top: 3px solid black;
+	background: white;
+}
+.cue-card .prompt {
+	font-size: 130%;
+	color: #319e32;
+	font-weight: bold;
+	margin-top: 1rem;
+	background: white;
+}
+.cue-card p {
+	color: #c0c0c0;
+	font-weight: bold;
+}

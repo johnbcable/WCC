@@ -10,6 +10,7 @@
 
     function convertArrayOfObjectsToDelimited(args) {
         var result, ctr, keys, columnDelimiter, lineDelimiter, data;
+        var rowkount = 0;
 
         data = args.data || null;
         if (data == null || !data.length) {
@@ -27,10 +28,12 @@
         result += lineDelimiter;
 
         data.forEach(function(item) {
+            rowkount++;
+            console.log('Processing JSON object '+rowkount);
             ctr = 0;
             keys.forEach(function(key) {
                 if (ctr > 0) result += columnDelimiter;
-
+                console.log(item[key]);
                 result += item[key];
                 ctr++;
             });
@@ -44,11 +47,13 @@
         var data, filename, link, sourcedata;
 
         sourcedata = args.data || noData;
+        console.log('No. of items in the sourcedata '+sourcedata.length);
         var csv = convertArrayOfObjectsToDelimited({
             data: sourcedata
         });
 
         if (csv == null) return;
+        console.log('Size of returned csv '+csv.length);
 
         filename = args.filename || 'export.csv';
 

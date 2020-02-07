@@ -1,0 +1,23 @@
+{
+  "name": "ConcessionaryTravel",
+  "version": "1.0.0",
+  "description": "Concessionary Travel business area styling",
+  "main": "bundle.js",
+  "dependencies": {
+    "kss": "^3.0.0-beta.25",
+    "michelangelo": "^0.8.0"
+  },
+  "devDependencies": {
+    "node-sass": "^4.12.0",
+    "onchange": "^6.1.0"
+  },
+  "scripts": {
+    "both": "npm run scss && npm run kss",
+    "scss": "node-sass sass -o css",
+    "kss": "kss --config kss-config.json",
+    "watch": "onchange -j2 'sass/**/*.scss' -- npm run both"
+  },
+  "keywords": [],
+  "author": "John Cable",
+  "license": "ISC"
+}

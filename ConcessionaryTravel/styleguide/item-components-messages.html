@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Concessionary Travel - Style Guide</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="generator" content="kss-node">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700,300">
+    <link rel="stylesheet" href="kss-assets/vendor/prism.css">
+    <link rel="stylesheet" href="kss-assets/css/kss.css">
+    <link rel="stylesheet" href="../css/CT.css">
+
+  </head>
+
+  <body class="kss-body">
+
+    <!-- header. -->
+    <header class="kss-header">
+      <section class="kss-header__inner">
+        <a class="kss-header__hamburger-trigger">
+          <div class="kss-header__hamburger"></div>
+        </a>
+        <h1 class="kss-header__title kss-title">Concessionary Travel - Style Guide</h1>
+      </section>
+    </header>
+    <!-- /header. -->
+
+
+    <!-- navigation. -->
+    <section class="kss-navigation">
+      <h1 class="kss-navigation__title kss-title">Concessionary Travel - Style Guide</h1>
+      <ul class="kss-nav">
+        <li class="kss-nav__item">
+          <a href="index.html">
+            <span class="kss-nav__ref">0</span>
+            <span class="kss-nav__name">Introduction</span>
+          </a>
+        </li>
+          <li class="kss-nav__item">
+            <a class="" href="section-base.html">
+              <span class="kss-nav__ref">1</span>
+              <span class="kss-nav__name">Base</span>
+            </a>
+          </li>
+          <li class="kss-nav__item">
+            <a class="" href="section-components.html">
+              <span class="kss-nav__ref">2</span>
+              <span class="kss-nav__name">Components</span>
+            </a>
+          </li>
+      </ul>
+    </section>
+    <!-- /navigation. -->
+
+
+    <!-- documentation. -->
+    <section class="kss-documentation">
+
+        <!--
+          display each section, in order.
+          the "root" element comes first in this loop, and can be detected using
+          the "#if @first" block as seen below.
+        -->
+            <header class="kss-section kss-section--depth-2" id="kssref-components-messages">
+
+            <article class="kss-section__content">
+                <p class="kss-section__source">Source: <span>CT.scss</span>, line <span>258</span></p>
+
+              <a class="kss-section__permalink" href="#kssref-components-messages">
+                <h2 class="kss-section__item kss-section__item--depth-2">
+                  <span class="kss-section__ref">2.5</span>
+                  <span class="kss-section__name">Messages</span>
+                </h2>
+              </a>
+
+                <div class="kss-section__description"><p>HTML for displaying messages to the operator using the Firmstep process.</p>
+</div>
+
+            </article>
+
+              <article class="kss-section__modifiers">
+                <h1 class="kss-modifiers__heading">Examples</h1>
+
+                  <h2 class="kss-modifiers__name">Default styling</h2>
+
+                <div class="kss-modifiers__example"><div class="messagePanel [modifier class]">
+    <p>This is the text of my message</p>
+    <h3>I can include headings</h3>
+    <p>And multiple paragraphs</p>
+</div></div>
+
+                  <article class="kss-modifiers__modifier">
+                    <h2 class="kss-modifiers__name">.cterror</h2>
+                    <p class="kss-modifiers__description">A warning message.</p>
+                    <div class="kss-modifiers__example"><div class="messagePanel cterror">
+    <p>This is the text of my message</p>
+    <h3>I can include headings</h3>
+    <p>And multiple paragraphs</p>
+</div></div>
+                  </article>
+                  <article class="kss-modifiers__modifier">
+                    <h2 class="kss-modifiers__name">.ctwarning</h2>
+                    <p class="kss-modifiers__description">A warning message.</p>
+                    <div class="kss-modifiers__example"><div class="messagePanel ctwarning">
+    <p>This is the text of my message</p>
+    <h3>I can include headings</h3>
+    <p>And multiple paragraphs</p>
+</div></div>
+                  </article>
+                  <article class="kss-modifiers__modifier">
+                    <h2 class="kss-modifiers__name">.ctinfo</h2>
+                    <p class="kss-modifiers__description">An information message.</p>
+                    <div class="kss-modifiers__example"><div class="messagePanel ctinfo">
+    <p>This is the text of my message</p>
+    <h3>I can include headings</h3>
+    <p>And multiple paragraphs</p>
+</div></div>
+                  </article>
+                  <article class="kss-modifiers__modifier">
+                    <h2 class="kss-modifiers__name">.ctsuccess</h2>
+                    <p class="kss-modifiers__description">A success message.</p>
+                    <div class="kss-modifiers__example"><div class="messagePanel ctsuccess">
+    <p>This is the text of my message</p>
+    <h3>I can include headings</h3>
+    <p>And multiple paragraphs</p>
+</div></div>
+                  </article>
+                  <article class="kss-modifiers__modifier">
+                    <h2 class="kss-modifiers__name">.ctadvice</h2>
+                    <p class="kss-modifiers__description">An advice message</p>
+                    <div class="kss-modifiers__example"><div class="messagePanel ctadvice">
+    <p>This is the text of my message</p>
+    <h3>I can include headings</h3>
+    <p>And multiple paragraphs</p>
+</div></div>
+                  </article>
+              </article>
+
+                <article class="kss-section__markup">
+                  <pre><code class="language-markup">&lt;div class&#x3D;&quot;messagePanel [modifier class]&quot;&gt;
+    &lt;p&gt;This is the text of my message&lt;/p&gt;
+    &lt;h3&gt;I can include headings&lt;/h3&gt;
+    &lt;p&gt;And multiple paragraphs&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+                </article>
+
+            </header>
+    </section>
+    <!-- /documentation. -->
+
+
+
+  <!-- scripts. -->
+  <script src="kss-assets/vendor/jquery.js"></script>
+  <script src="kss-assets/vendor/prism.js"></script>
+  <script src="kss-assets/js/kss.js"></script>
+  <script src="../bundle.js"></script>
+
+  <!-- /scripts. -->
+
+  </body>
+</html>

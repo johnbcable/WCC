@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Concessionary Travel - Style Guide</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="generator" content="kss-node">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700,300">
+    <link rel="stylesheet" href="kss-assets/vendor/prism.css">
+    <link rel="stylesheet" href="kss-assets/css/kss.css">
+    <link rel="stylesheet" href="../css/CT.css">
+
+  </head>
+
+  <body class="kss-body">
+
+    <!-- header. -->
+    <header class="kss-header">
+      <section class="kss-header__inner">
+        <a class="kss-header__hamburger-trigger">
+          <div class="kss-header__hamburger"></div>
+        </a>
+        <h1 class="kss-header__title kss-title">Concessionary Travel - Style Guide</h1>
+      </section>
+    </header>
+    <!-- /header. -->
+
+
+    <!-- navigation. -->
+    <section class="kss-navigation">
+      <h1 class="kss-navigation__title kss-title">Concessionary Travel - Style Guide</h1>
+      <ul class="kss-nav">
+        <li class="kss-nav__item">
+          <a href="index.html">
+            <span class="kss-nav__ref">0</span>
+            <span class="kss-nav__name">Introduction</span>
+          </a>
+        </li>
+          <li class="kss-nav__item">
+            <a class="" href="section-base.html">
+              <span class="kss-nav__ref">1</span>
+              <span class="kss-nav__name">Base</span>
+            </a>
+          </li>
+          <li class="kss-nav__item">
+            <a class="kss-state-active" href="section-components.html">
+              <span class="kss-nav__ref">2</span>
+              <span class="kss-nav__name">Components</span>
+            </a>
+                <ul class="kss-nav__subnav">
+                    <li class="kss-nav__item ">
+                      <a href="section-components.html#kssref-components-button">
+                        <span class="kss-nav__ref">2.1</span>
+                        <span class="kss-nav__name">Buttons</span>
+                      </a>
+                    </li>
+                    <li class="kss-nav__item ">
+                      <a href="section-components.html#kssref-components-outages">
+                        <span class="kss-nav__ref">2.2</span>
+                        <span class="kss-nav__name">Service Outages</span>
+                      </a>
+                    </li>
+                    <li class="kss-nav__item kss-nav__item--grandchild">
+                      <a href="section-components.html#kssref-components-outages-title">
+                        <span class="kss-nav__ref">2.2.1</span>
+                        <span class="kss-nav__name">Title</span>
+                      </a>
+                    </li>
+                    <li class="kss-nav__item kss-nav__item--grandchild">
+                      <a href="section-components.html#kssref-components-outages-subtitle">
+                        <span class="kss-nav__ref">2.2.2</span>
+                        <span class="kss-nav__name">Sub title</span>
+                      </a>
+                    </li>
+                    <li class="kss-nav__item kss-nav__item--grandchild">
+                      <a href="section-components.html#kssref-components-outages-timeperiod">
+                        <span class="kss-nav__ref">2.2.3</span>
+                        <span class="kss-nav__name">Disruption Period</span>
+                      </a>
+                    </li>
+                    <li class="kss-nav__item ">
+                      <a href="section-components.html#kssref-components-debugpanel">
+                        <span class="kss-nav__ref">2.3</span>
+                        <span class="kss-nav__name">Debug Panel</span>
+                      </a>
+                    </li>
+                    <li class="kss-nav__item ">
+                      <a href="section-components.html#kssref-components-developernotes">
+                        <span class="kss-nav__ref">2.4</span>
+                        <span class="kss-nav__name">Developer Notes</span>
+                      </a>
+                    </li>
+                    <li class="kss-nav__item kss-nav__item--grandchild">
+                      <a href="section-components.html#kssref-components-developernotes-notetitle">
+                        <span class="kss-nav__ref">2.4.1</span>
+                        <span class="kss-nav__name">Note Title</span>
+                      </a>
+                    </li>
+                    <li class="kss-nav__item ">
+                      <a href="section-components.html#kssref-components-messages">
+                        <span class="kss-nav__ref">2.5</span>
+                        <span class="kss-nav__name">Messages</span>
+                      </a>
+                    </li>
+                    <li class="kss-nav__item kss-nav__item--grandchild">
+                      <a href="section-components.html#kssref-components-messages-cuecards">
+                        <span class="kss-nav__ref">2.5.1</span>
+                        <span class="kss-nav__name">Cue Cards</span>
+                      </a>
+                    </li>
+                </ul>
+          </li>
+      </ul>
+    </section>
+    <!-- /navigation. -->
+
+
+    <!-- documentation. -->
+    <section class="kss-documentation">
+
+        <!--
+          display each section, in order.
+          the "root" element comes first in this loop, and can be detected using
+          the "#if @first" block as seen below.
+        -->
+            <header class="kss-section kss-section--depth-1" id="kssref-components">
+
+            <article class="kss-section__content">
+                <p class="kss-section__source">Source: <span>CT.scss</span>, line <span>13</span></p>
+
+              <a class="kss-section__permalink" href="#kssref-components">
+                <h1 class="kss-section__item kss-section__item--depth-1">
+                  <span class="kss-section__ref">2</span>
+                  <span class="kss-section__name">Components</span>
+                </h1>
+              </a>
+
+                <div class="kss-section__description"><p>These are styles applied to Firmstep components of our CT application.
+They may be made up of smaller groups of styles. The styling of these components
+is specified in this (CT.css) file which is loaded into CT Firmstep processes using
+the static link:  http://static.warwickshire.gov.uk//firmstep/processes/concessionary_travel/css/CT.css
+as used in the WCC CT Initialise subform.</p>
+</div>
+
+            </article>
+
+
+            </header>
+    </section>
+    <!-- /documentation. -->
+
+
+
+  <!-- scripts. -->
+  <script src="kss-assets/vendor/jquery.js"></script>
+  <script src="kss-assets/vendor/prism.js"></script>
+  <script src="kss-assets/js/kss.js"></script>
+  <script src="../bundle.js"></script>
+
+  <!-- /scripts. -->
+
+  </body>
+</html>
