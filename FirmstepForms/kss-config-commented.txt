@@ -1,5 +1,5 @@
 {
-    "title": "Concessionary Travel - Style Guide",
+    "title": "Firmstep Forms - Visual Style Guide",
   
     // Source tells KSS where the CSS, Sass, or SCSS is that it should parse for documentation comments. 
     // Here we are assuming your sass is in a directory at the root level of your project.

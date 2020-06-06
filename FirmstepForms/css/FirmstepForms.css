@@ -1,0 +1,161 @@
+.developerNotes {
+  position: relative;
+  border: 2px solid blue;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #D2E9F5;
+  color: blue; }
+
+.noteTitle {
+  text-decoration: underline;
+  color: blue;
+  font-weight: bold;
+  font-size: 120%;
+  margin-bottom: 2em;
+  text-decoration: underline; }
+
+.serviceDisruptionContainer {
+  border: 2px solid black;
+  padding: 20px;
+  border-radius: 10px; }
+
+.serviceDisruptionTitle {
+  font-weight: bold;
+  color: blue;
+  font-size: 120%;
+  margin-bottom: 2em; }
+
+.serviceDisruptionSubTitle {
+  font-weight: bold;
+  color: black;
+  font-size: 110%;
+  margin-bottom: 2em; }
+
+.serviceDisruptionPeriod {
+  font-weight: bold;
+  color: red;
+  font-size: 100%;
+  margin-bottom: 2em;
+  padding-bottom: 2em;
+  border-bottom: 1px solid black; }
+
+.ctbutton {
+  padding: 1em 2em;
+  margin: .5em;
+  display: inline-block;
+  font-size: .9em;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: white !important;
+  background-color: #006d3c;
+  border: 2px solid #00532e;
+  border-radius: 6px;
+  cursor: pointer;
+  text-align: center;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
+  webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+  moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+  ms-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+  webkit-transition-duration: 0.5s;
+  moz-transition-duration: 0.5s;
+  ms-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  webkit-user-select: none;
+  moz-user-select: none;
+  ms-user-select: none;
+  user-select: none;
+  transition: all 0.5s; }
+
+.ctbutton span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s; }
+
+.ctbutton span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s; }
+
+.ctbutton:hover {
+  color: yellow !important;
+  background-color: #006d3c; }
+
+.ctbutton:hover span {
+  padding-right: 25px; }
+
+.ctbutton:hover span:after {
+  opacity: 1;
+  right: 0; }
+
+.ctbutton:focus {
+  color: yellow !important;
+  border-color: currentColor; }
+
+.ctbutton:active {
+  background-color: #000;
+  color: #fff !important; }
+
+.ctbutton--small {
+  font-size: .5em; }
+
+.ctbutton--large {
+  font-size: 1.5em; }
+
+.debugPanel {
+  border: 1px solid black; }
+
+.debugPanel caption {
+  font-weight: bold; }
+
+.messagePanel {
+  margin: 1rem;
+  padding: 1rem; }
+
+.ctadvice {
+  text-align: center;
+  color: brown;
+  background: #FBF6DD; }
+
+.cterror {
+  border-left: 10px solid red;
+  color: red;
+  background: #EBCECE; }
+
+.ctwarning {
+  border-left: 10px solid brown;
+  color: brown;
+  background: #FBF6DD; }
+
+.ctinfo {
+  border-left: 10px solid blue;
+  color: blue;
+  background-color: #D2E9F5; }
+
+.ctsuccess {
+  border-left: 10px solid green;
+  color: green;
+  background: #D2EAC8; }
+
+.cue-card {
+  margin: 1rem;
+  padding: 1rem;
+  border-left: 3px solid black;
+  border-top: 3px solid black;
+  background: white; }
+
+.cue-card .prompt {
+  font-size: 130%;
+  color: #319e32;
+  font-weight: bold;
+  margin-top: 1rem;
+  background: white; }
+
+.cue-card p {
+  color: #c0c0c0;
+  font-weight: bold; }

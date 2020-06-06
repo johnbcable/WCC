@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Concessionary Travel - Style Guide</title>
+    <title>Firmstep Forms - Visual Style Guide</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="mobile-web-app-capable" content="yes">
@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700,300">
     <link rel="stylesheet" href="kss-assets/vendor/prism.css">
     <link rel="stylesheet" href="kss-assets/css/kss.css">
-    <link rel="stylesheet" href="../css/CT.css">
+    <link rel="stylesheet" href="../css/FirmstepForms.css">
 
   </head>
 
@@ -22,7 +22,7 @@
         <a class="kss-header__hamburger-trigger">
           <div class="kss-header__hamburger"></div>
         </a>
-        <h1 class="kss-header__title kss-title">Concessionary Travel - Style Guide</h1>
+        <h1 class="kss-header__title kss-title">Firmstep Forms - Visual Style Guide</h1>
       </section>
     </header>
     <!-- /header. -->
@@ -30,7 +30,7 @@
 
     <!-- navigation. -->
     <section class="kss-navigation">
-      <h1 class="kss-navigation__title kss-title">Concessionary Travel - Style Guide</h1>
+      <h1 class="kss-navigation__title kss-title">Firmstep Forms - Visual Style Guide</h1>
       <ul class="kss-nav">
         <li class="kss-nav__item">
           <a href="index.html">
@@ -63,19 +63,22 @@
           the "root" element comes first in this loop, and can be detected using
           the "#if @first" block as seen below.
         -->
-            <header class="kss-section kss-section--depth-3" id="kssref-components-outages-subtitle">
+            <header class="kss-section kss-section--depth-2" id="kssref-components-developernotes">
 
             <article class="kss-section__content">
-                <p class="kss-section__source">Source: <span>CT.scss</span>, line <span>114</span></p>
+                <p class="kss-section__source">Source: <span>FirmstepForms.scss</span>, line <span>26</span></p>
 
-              <a class="kss-section__permalink" href="#kssref-components-outages-subtitle">
-                <h3 class="kss-section__item kss-section__item--depth-3">
-                  <span class="kss-section__ref">2.2.2</span>
-                  <span class="kss-section__name">Sub title</span>
-                </h3>
+              <a class="kss-section__permalink" href="#kssref-components-developernotes">
+                <h2 class="kss-section__item kss-section__item--depth-2">
+                  <span class="kss-section__ref">2.4</span>
+                  <span class="kss-section__name">Developer Notes</span>
+                </h2>
               </a>
 
-                <div class="kss-section__description"><p>Subtitle of the service disruption message (optional)</p>
+                <div class="kss-section__description"><p>Defines the way in which notes for Firmstep developers appear.
+These are normally implemented as HTML tokens with display condition 1=2
+located physically adjacent in the Firmstep source to the Firmstep controls it relates to.
+so that they appear in the developer window but not at run-time</p>
 </div>
 
             </article>
@@ -84,12 +87,16 @@
                 <h1 class="kss-modifiers__heading">Example</h1>
 
 
-                <div class="kss-modifiers__example"><h5 class="serviceDisruptionSubTitle">Monday 14<sup>th</sup> January, 2019</h5></div>
+                <div class="kss-modifiers__example"><div class="developerNotes">Developer notes. These may optionally
+also contain .noteTitle elements
+<p class="noteTitle">A Note Title</p></div></div>
 
               </article>
 
                 <article class="kss-section__markup">
-                  <pre><code class="language-markup">&lt;h5 class&#x3D;&quot;serviceDisruptionSubTitle&quot;&gt;Monday 14&lt;sup&gt;th&lt;/sup&gt; January, 2019&lt;/h5&gt;</code></pre>
+                  <pre><code class="language-markup">&lt;div class&#x3D;&quot;developerNotes&quot;&gt;Developer notes. These may optionally
+also contain .noteTitle elements
+&lt;p class&#x3D;&quot;noteTitle&quot;&gt;A Note Title&lt;/p&gt;&lt;/div&gt;</code></pre>
                 </article>
 
             </header>
