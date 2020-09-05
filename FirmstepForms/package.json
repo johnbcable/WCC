@@ -8,7 +8,7 @@
     "michelangelo": "^0.8.0"
   },
   "devDependencies": {
-    "node-sass": "^4.12.0",
+    "node-sass": "^4.13.1",
     "onchange": "^6.1.0"
   },
   "scripts": {
